@@ -32,6 +32,8 @@ gem 'jquery-turbolinks'
 gem 'jquery-fileupload-rails'
 gem 'role-rails'
 gem 'haml-rails'
+gem 'simple-navigation'
+gem 'simple-navigation-bootstrap'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
