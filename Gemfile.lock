@@ -109,6 +109,11 @@ GEM
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     sexp_processor (4.4.4)
+    simple-navigation (3.13.0)
+      activesupport (>= 2.3.2)
+    simple-navigation-bootstrap (1.0.0)
+      railties (>= 3.1)
+      simple-navigation (>= 3.7.0)
     spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -126,7 +131,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.5.2)
+    turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -148,6 +153,8 @@ DEPENDENCIES
   role-rails
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  simple-navigation
+  simple-navigation-bootstrap
   spring
   sqlite3
   turbolinks
