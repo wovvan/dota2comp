@@ -1,4 +1,4 @@
-require 'dota/version'
+  require 'dota/version'
 require 'dota/client'
 
 module Dota

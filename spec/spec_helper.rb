@@ -12,7 +12,6 @@ module SpecHelper
       client.configure do |config|
         config.api_key = 'TEST_API_KEY'
       end
-
       client
     end
   end
@@ -23,5 +22,6 @@ module SpecHelper
 end
 
 class MiniTest::Spec
+  #WebMock.allow_net_connect!
   include SpecHelper
 end

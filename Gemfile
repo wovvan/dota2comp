@@ -20,9 +20,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
-
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -32,6 +33,12 @@ gem 'role-rails'
 gem 'haml-rails'
 gem 'simple-navigation'
 gem 'simple-navigation-bootstrap'
+
+# use Steam OpenID omniauth gem for authenticating steam users
+gem 'omniauth-steam'
+
+# gem for managing environment variables (steam webapi key)
+gem 'figaro'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
