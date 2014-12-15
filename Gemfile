@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 gemspec
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -36,7 +35,7 @@ gem 'simple-navigation-bootstrap'
 
 # use Steam OpenID omniauth gem for authenticating steam users
 gem 'omniauth-steam'
-
+gem 'omniauth-openid'
 # gem for managing environment variables (steam webapi key)
 gem 'figaro'
 # Use ActiveModel has_secure_password

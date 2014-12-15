@@ -20,6 +20,4 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'faraday'
   gem.add_dependency 'faraday_middleware'
   gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'minitest'
-  gem.add_development_dependency 'webmock'
 end

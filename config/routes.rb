@@ -1,20 +1,32 @@
 Rails.application.routes.draw do
+  get 'profile/myprofile'
+
+  get 'profile/profile'
+
+  get 'profile/new'
+
+  get 'profile/create'
+
+  get 'auth/index'
+
   get 'translations' => 'translations#index'
 
   get 'faq' => 'faq#index'
 
   resources :sandboxes
-
+  root 'main#index'
   get 'competitions' => 'competitions#index'
 
-  get 'top' => 'top#top_callback'
-
+  get 'top' => 'top#index'
+  post 'auth/steam/callback' => 'auth#auth_callback'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root to: 'main#index', as: 'main'
+  get 'myprofile' => 'profile#myprofile'
+  get 'profile' => 'profile#profile'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

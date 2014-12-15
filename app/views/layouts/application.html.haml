@@ -27,9 +27,9 @@
           %ul.nav.navbar-nav.navbar-right
             - if session.key? :user
               %li
-                %a{:href => "/mymatches"}
-                  Hi #{session[:user][:nickname]}
-              %li= image_tag session[:user][:image], class: 'avatar'
+                %a{:href => "/myprofile"}
+                  Hi #{session[:user]["nickname"]}
+              %li= image_tag session[:user]["image"], class: 'avatar'
               %li
                 %a{:href => "/logout"} Logout
             - else
