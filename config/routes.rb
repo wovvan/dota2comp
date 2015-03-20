@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   get 'top' => 'top#index'
   post 'auth/steam/callback' => 'auth#auth_callback'
+  get 'logout' => 'auth#logout'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
