@@ -1,7 +1,41 @@
-.text
-  Hi #{session[:user]["nickname"]}
-.img
-  = image_tag session[:user]["image"], class: 'avatar'
-%a{:href => "http://ru.dotabuff.com/players/#{session[:user]["uid"]}"}
-  Ссылка на дотабаф
-= session[:user]
+.row
+  .col-md-3
+    .img
+      - s = session[:user]["image"].sub("medium", "full")
+      = image_tag s, class: 'avatar2 img-thumbnail'
+  .col-md-6
+    .text{:style => "margin-top:10px;"}
+      %p Nickname #{session[:user]["nickname"]}
+      %p User ID #{session[:user]["uid"]}
+      %p Victory 11
+      %p Defeat 12
+      %p Ratio 46.42%
+      %p Earned points 120p
+    %a{:href => "http://ru.dotabuff.com/players/#{session[:user]["uid"]}"}
+      Link to dotabaf
+    = #session[:user]
+.row
+  .col-md-10{:style=>"margin-left:40px;"}
+    %table.table.table-striped
+      %thead
+        %tr
+          %th #
+          %th Имя
+          %th Фамилия
+          %th Пользователь
+      %tbody
+        %tr
+          %td 1
+          %td Mark
+          %td Otto
+          %td @mdo
+        %tr
+          %td 2
+          %td Jacob
+          %td Thornton
+          %td @fat
+        %tr
+          %td 3
+          %td Larry
+          %td the Bird
+          %td @twitter

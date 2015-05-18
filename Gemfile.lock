@@ -181,10 +181,10 @@ DEPENDENCIES
   jquery-turbolinks
   omniauth-openid
   omniauth-steam
-  rails (= 4.1.4)
+  rails
   rake
   role-rails
-  sass-rails (~> 4.0.3)
+  sass-rails
   sdoc (~> 0.4.0)
   simple-navigation
   simple-navigation-bootstrap
